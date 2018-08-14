@@ -1,5 +1,5 @@
 public class Fizzbuzz {
-    public String fizzbuzz(int number) {
+    public static String fizzbuzz(int number) {
         if (number % 15 == 0) {
             return "Fizzbuzz";
         } else if (number % 3 == 0) {
@@ -11,4 +11,9 @@ public class Fizzbuzz {
         }
     }
 
+    public static void main (String [] args) {
+        for (int i = 0; i < 100; i++) {
+            System.out.println(fizzbuzz(i));
+        }
+    }
 }
